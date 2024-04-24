@@ -10,7 +10,6 @@ function handleProfileSignup() {
     })
     .catch((error) => {
       console.error('Signup system offline');
-      return error;
     });
 }
 
