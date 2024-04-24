@@ -11,7 +11,7 @@ function handleResponseFromAPI(promise) {
         resolve(successObject);
       })
       .catch((error) => {
-        console.error('Error fetching data:', error.message);
+        console.error('Got a response from the API');
         reject(error);
       });
   });
