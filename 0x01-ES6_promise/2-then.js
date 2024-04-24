@@ -4,7 +4,7 @@ function handleResponseFromAPI(promise) {
       status: 200,
       body: 'Success',
     };
-
+    const errObject = {};
     promise
       .then(() => {
         console.log('Got a response from the API');
@@ -12,7 +12,7 @@ function handleResponseFromAPI(promise) {
       })
       .catch((error) => {
         console.error();
-        reject(error);
+        reject(errObject);
       });
   });
 }
